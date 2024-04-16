@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { FaSistrix } from 'react-icons/fa';
+
 
 type SearchFormProps = {
     onSubmit: (searchQuery: string) => void;
@@ -18,15 +18,26 @@ const SearchForm: React.FC<SearchFormProps> = ({ onSubmit }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <div className="hero">
+				<div className="container">
+					<form action="#" className="find-location" onSubmit={handleSubmit}>
+						<input type="text" placeholder="Search your city now..." value={searchQuery}
+                onChange={handleChange}/>
+						<input type="submit" value="Search"/>
+					</form>
+
+				</div>
+			
+        {/*<form onSubmit={handleSubmit}>
             <input
                 type="text"
-                placeholder="Enter City Name"
+                placeholder="Search city name"
                 value={searchQuery}
                 onChange={handleChange}
             />
             <button type="submit"><FaSistrix /></button>
-        </form>
+    </form>*/}
+    </div>
     );
 };
 
