@@ -14,9 +14,9 @@ const RecentSearches: React.FC<RecentSearchesProps> = ({ recentSearches }) => {
 						<div className="row">
 							
                         {recentSearches.map((search, index) => (
-                    <div key={index} className="col-md-3 col-sm-6">
-                    <div className="live-camera">
-                        <h3 className="location">{search}</h3>
+                    <div key={index} className="col-md-3 col-sm-6 p-2">
+                    <div className=" bg-[#323544] px-2 rounded-sm cursor-pointer">
+                        <h3 className="">{search}</h3>
                     </div>
                 </div>
                 ))}

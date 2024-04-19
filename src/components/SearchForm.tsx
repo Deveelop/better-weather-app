@@ -15,10 +15,11 @@ const SearchForm: React.FC<SearchFormProps> = ({ onSubmit }) => {
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         onSubmit(searchQuery);
+        setSearchQuery('')
     };
 
     return (
-        <div className="hero">
+        <div className="hero bg-[url('/images/banner.png')]">
 				<div className="container">
 					<form action="#" className="find-location" onSubmit={handleSubmit}>
 						<input type="text" placeholder="Search your city now..." value={searchQuery}
