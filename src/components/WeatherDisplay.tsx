@@ -63,16 +63,7 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ weatherData, errormsg }
         </div>
     </div>
 
-        {/*<div>
-            <img src={weatherData.image} alt={weatherData.city} />
-            <h1>{displayTemperature(weatherData.temperature, unit)}°{unit === 'metric' ? 'C' : 'F'}</h1>
-            <h2>{weatherData.city}</h2>
-            <div>
-                <p>Humidity: {Math.round(weatherData.humidity)}%</p>
-                <p>Wind: {Math.round(weatherData.windSpeed)} km/h</p>
-                <p>description: {weatherData.description}</p>
-            </div>
-    </div>*/}
+       
     </>
     );
 };

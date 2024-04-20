@@ -28,16 +28,6 @@ const SearchForm: React.FC<SearchFormProps> = ({ onSubmit }) => {
 					</form>
 
 				</div>
-			
-        {/*<form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                placeholder="Search city name"
-                value={searchQuery}
-                onChange={handleChange}
-            />
-            <button type="submit"><FaSistrix /></button>
-    </form>*/}
     </div>
     );
 };
